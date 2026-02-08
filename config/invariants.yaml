@@ -1,0 +1,16 @@
+invariants:
+  - name: "IDOR_OWNERSHIP"
+    rule: "response.user_id == session.user_id"
+    violation_severity: "High"
+    description: "User A accessed User B data."
+
+  - name: "ADMIN_ACCESS"
+    rule: "status_code == 200 AND body_contains('admin_panel')"
+    violation_severity: "Critical"
+    description: "Standard User accessed Admin Panel."
+
+  - name: "LOGIC_BYPASS"
+    rule: "price < 0 OR quantity < 0"
+    violation_severity: "Medium"
+    description: "Negative value processed by server."
+    
