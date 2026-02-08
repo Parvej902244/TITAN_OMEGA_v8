@@ -1,0 +1,20 @@
+# --- Core Async Networking ---
+aiohttp>=3.9.0
+
+# --- Telegram Bot Framework ---
+aiogram>=3.4.1
+
+# --- HTTP & API Calls (AI / Ollama) ---
+requests>=2.31.0
+
+# --- YAML Config Loader ---
+PyYAML>=6.0.1
+
+# --- Async Utilities ---
+async-timeout>=4.0.3
+
+# --- Date & Time Helpers ---
+python-dateutil>=2.8.2
+
+# --- Optional (Safe defaults, future-ready) ---
+typing-extensions>=4.9.0
